@@ -17,7 +17,7 @@ Pokemon images that I used in template were downloaded from this [site](https://
 # How to do this:
 1. Create Basic Card
 2. Add fields: Questions, Code, Answer 1, Answer 2, Answer 3, Answer 4, Correct Answer
-3. In front template paste [code]()
-4. In back template paste [code]()
-5. In styling paste [code]()
-6. To make sure that everything works, you need to paste also [media]() files into 'colection.media' folder in Anki. On Mac, you can search that by Go/Go to folder/~/Library/Application Support/Anki2/
+3. In front template paste [code](https://github.com/KonradGonrad/Anki_Pokemon_Template/blob/main/code/front.html)
+4. In back template paste [code](https://github.com/KonradGonrad/Anki_Pokemon_Template/blob/main/code/back.html)
+5. In styling paste [code](https://github.com/KonradGonrad/Anki_Pokemon_Template/blob/main/code/style.css)
+6. To make sure that everything works, you need to paste also [pokemon_front](https://github.com/KonradGonrad/Anki_Pokemon_Template/tree/main/pokemon_front), [pokemon_back](https://github.com/KonradGonrad/Anki_Pokemon_Template/tree/main/pokemon_back) and [background](https://github.com/KonradGonrad/Anki_Pokemon_Template/tree/main/background) files into 'colection.media' folder in Anki. On Mac, you can search that by Go/Go to folder/~/Library/Application Support/Anki2/
