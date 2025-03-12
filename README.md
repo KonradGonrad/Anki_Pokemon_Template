@@ -3,11 +3,13 @@ Hello,
 Today I was watching some Youtube videos about Anki templates, because I was bored by classic Anki template. And when I was watching this [video](https://www.youtube.com/watch?v=JyDpCiKCu20) I wanted to 
 recreate this, and that's how I came up with this template.
 
-Front:
-<img width="519" alt="image" src="https://github.com/user-attachments/assets/ee62ae35-66f1-4951-82b7-5723a6cf590f" />
+Front: </br>
+<img width="572" alt="image" src="https://github.com/user-attachments/assets/809617ad-50e6-4242-b442-216f058542d1" />
 
-Back:
-<img width="519" alt="image" src="https://github.com/user-attachments/assets/a8bbf7b5-5306-476a-b67f-907cb7bbe4d5" />
+
+Back: </br>
+<img width="555" alt="image" src="https://github.com/user-attachments/assets/d25ac670-2c7a-4383-a174-ec03919a6302" />
+
 
 Pokemon images that I used in template were downloaded from this [site](https://veekun.com/dex/downloads)
 
