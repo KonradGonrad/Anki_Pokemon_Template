@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.battle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.battle-scene {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: -25px; 
+}
+
+.background {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.pokemon-container {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.pokemon {
+    width: 120px;
+    position: absolute;
+    animation: float 1.5s infinite alternate ease-in-out;
+}
+
+.pokemon-left {
+    left: 10%;
+    transform: scaleX(-1);
+}
+
+.pokemon-right {
+    right: 17%;
+	  bottom: -15px;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    100% { transform: translateX(-5px); }
+}
+
+/* === Question Box === */
+.question-box {
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 3;
+    display: flex;
+}
+
+.question-text {
+    width: 50%;
+    font-size: 12px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+
+.answers {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer {
+    padding: 10px;
+    font-size: 12px;
+    background: #ffcc00;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.answer:hover {
+    background: #ff9900;
+}
+
+.correct {
+    background: green !important;
+}
+
+.wrong {
+    background: red !important;
+}
+
+
+.code {
+    background-color: #2d2d2d;  
+    color: #f8f8f2;               
+    font-family: 'Courier New', monospace;  
+    padding: 15px;                
+    border-radius: 10px;          
+    overflow-x: auto;             
+    white-space: pre-wrap;        
+    font-size: 14px;              
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+
+.code pre {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+
+.code pre span {
+    color: #f8f8f2; 
+    font-family: 'Courier New', monospace; 
+}

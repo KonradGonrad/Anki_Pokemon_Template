@@ -1,0 +1,62 @@
+<div class="battle-container">
+    <div class="battle-scene">
+        <img src="_battle_scene.png.webp" class="background">  
+
+        <div class="pokemon-container">
+            <img id="pokemon-left" class="pokemon pokemon-left">
+            <img id="pokemon-right" class="pokemon pokemon-right">
+        </div>
+    </div>
+
+    <div class="question-box">
+        <div class="question-text">
+            {{Question}}
+            {{#Code}}
+            <pre class="code">{{Code}}</pre>
+            {{/Code}}
+        </div>
+        <div class="answers">
+            <button class="answer" onclick="checkAnswer(this)">{{Answer 1}}</button>
+            <button class="answer" onclick="checkAnswer(this)">{{Answer 2}}</button>
+            <button class="answer" onclick="checkAnswer(this)">{{Answer 3}}</button>
+            <button class="answer" onclick="checkAnswer(this)">{{Answer 4}}</button>
+        </div>
+    </div>
+</div>
+
+<script>
+const pokemons_front = [
+    "_Pikachu_front.png", "_Charmeleon_front.png", "_Squirtle_front.png",
+    "_Raichu_front.png", "_Evee_front.png", "_Lucario_front.png",
+    "_Mew_front.png", "_Bulbasaur_front.png", "_Charmander_front.png",
+    "Gyardos_front.png", "_Rapidash_front.png", "_Dragonite_front.png",
+    "_Umbreon_front.png", "_Charizard_front.png", "_Blastoise_front.png",
+    "_Snorlax_front.png", "_Swampert_front.png", "Espeon_front.png"
+];
+
+const pokemons_back = [
+    "_Mew_back.png", "_Snorlax_back.png", "_Pikachu_back.png",
+    "_Rapidash_back.png", "_Dragonite_back.png", "Espeon_back.png",
+    "_Swampert_back.png", "_Lucario_back.png", "_Raichu_back.png",
+    "_Charmander_back.png", "_Squirtle_back.png", "_Charmeleon_back.png",
+    "_Charizard_back.png", "_Umbreon_back.png", "_Blastoise_back.png",
+    "_Bulbasaur_back.png", "Gyardos_back.png", "_Vaporeon_back.png",
+    "_Evee_back.png"
+];
+
+
+    document.getElementById("pokemon-left").src = pokemons_back[Math.floor(Math.random() * pokemons_back.length)];
+    document.getElementById("pokemon-right").src = pokemons_front[Math.floor(Math.random() * pokemons_front.length)];
+
+    function checkAnswer(button) {
+        if (button.innerText.trim() === "{{Correct Answer}}") {
+            button.classList.add("correct");
+        } else {
+            button.classList.add("wrong");
+        }
+        
+        setTimeout(() => { 
+            window.location.reload();
+        }, 1000);
+    }
+</script>

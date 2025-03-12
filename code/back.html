@@ -1,0 +1,29 @@
+<div class="battle-container">
+    <div class="battle-scene">
+        <img src="_battle_scene.png.webp" class="background"> 
+
+        <div class="pokemon-container">
+            <img id="pokemon-left" class="pokemon pokemon-left">
+            <img id="pokemon-right" class="pokemon pokemon-right">
+        </div>
+    </div>
+
+    <div class="question-box">
+        <div class="question-text">
+            {{Question}} 
+            {{#Code}}
+            <pre class="code">{{Code}}</pre>
+            {{/Code}}
+        </div>
+        <div class="answers">
+            <button class="answer">{{Answer 1}}</button>
+            <button class="answer">{{Answer 2}}</button>
+            <button class="answer">{{Answer 3}}</button>
+            <button class="answer">{{Answer 4}}</button>
+        </div>
+    </div>
+
+    <div class="correct-answer">
+        <p><strong>Correct Answer: </strong>{{Correct Answer}}</p>
+    </div>
+</div>
